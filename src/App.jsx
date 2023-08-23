@@ -112,9 +112,9 @@ function App() {
     <>
       <div className="App">
         {/* //header */}
-        <h1>test</h1>
+        <h1>Survey</h1>
         {/* //status */}
-        <h2>test score {score}</h2>
+        {/* <h2>test score {score}</h2> */}
         {showResponse ? (
           <div className="feedback">
             <h1>You Got:{finalResult.text} </h1>

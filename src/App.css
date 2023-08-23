@@ -8,7 +8,6 @@
 .Questions {
   background-color: grey;
   padding: 1em;
-  border-radius: 16px;
   width: 80%;
   height: auto;
   margin: 0 auto;
@@ -19,10 +18,27 @@ ul {
   padding: 16px;
   font-size: 20px;
   margin-top: 8px;
-  list-style-type: none;
+  list-style-type: none
+}
+
+li {
+  width: 300px;
+    background: grey;
+    font-size: 20px;
+    margin: 10px auto;
+    padding: 1px;
+    cursor: pointer;
+}
+
+li:hover {
+    /*opacity: 0.3;*/
+    background: white;
+    transform: scale(1.1);     /* Equal to scaleX(2) scaleY(2) */
+    transition-duration: 0.5s;
+   /*transform: scale(0.6);*/
 }
 
 .question-text{
-  color: darkblue;
+  color: rgb(80, 80, 94);
   font-size: 24px;
 }
