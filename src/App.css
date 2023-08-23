@@ -1,8 +1,19 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: beige;
+}
+
+.card {
+  padding: 20px;
+  width: 600px;
+  margin: auto;
+  margin-top: 20px; 
+}
+
+.top {
+  padding-top: 40px;
 }
 
 .Questions {
@@ -11,6 +22,18 @@
   width: 80%;
   height: auto;
   margin: 0 auto;
+}
+
+.image {
+  max-height: 400px;
+  width: auto;
+  margin: auto;
+}
+
+.feedback {
+  
+  width: 800px;
+  margin: auto;
 }
 
 ul {
@@ -30,10 +53,22 @@ li {
     cursor: pointer;
 }
 
+.start {
+  width: 300px;
+    background: grey;
+    font-size: 20px;
+    margin: 10px auto;
+    padding: 1px;
+    cursor: pointer;
+}
+.start:hover {background: white;
+  transform: scale(1.03);     /* Equal to scaleX(2) scaleY(2) */
+  transition-duration: 0.5s;}
+
 li:hover {
     /*opacity: 0.3;*/
     background: white;
-    transform: scale(1.1);     /* Equal to scaleX(2) scaleY(2) */
+    transform: scale(1.03);     /* Equal to scaleX(2) scaleY(2) */
     transition-duration: 0.5s;
    /*transform: scale(0.6);*/
 }
