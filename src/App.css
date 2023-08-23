@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: beige;
+  background-color: #E8E8E8;
 }
 
 .card {
@@ -17,11 +17,20 @@
 }
 
 .Questions {
-  background-color: grey;
+  background-color: #E8E8E8;
   padding: 1em;
   width: 80%;
   height: auto;
   margin: 0 auto;
+  color: black;
+}
+
+.fade-in {
+  transition: opacity 1s ease;
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 .image {
@@ -37,16 +46,19 @@
 }
 
 ul {
-  background-color: darkgray;
+  background-color: #EAEAEA;
   padding: 16px;
   font-size: 20px;
+  margin: auto;
   margin-top: 8px;
-  list-style-type: none
+  list-style-type: none;
+  color: black;
+  width: 500px;
 }
 
 li {
   width: 300px;
-    background: grey;
+    background: #ADADAD;
     font-size: 20px;
     margin: 10px auto;
     padding: 1px;
@@ -55,7 +67,7 @@ li {
 
 .start {
   width: 300px;
-    background: grey;
+    background: #ADADAD;
     font-size: 20px;
     margin: 10px auto;
     padding: 1px;
@@ -77,3 +89,4 @@ li:hover {
   color: rgb(80, 80, 94);
   font-size: 24px;
 }
+

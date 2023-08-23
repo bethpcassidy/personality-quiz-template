@@ -6,6 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   const [count, setCount] = useState(0);
 
+  const Questions = document.getElementById("Questions");
+
   //variables
   const [showResponse, setResponse] = useState(false);
   const [score, setScore] = useState(0);
@@ -124,9 +126,9 @@ function App() {
             {/* <h2>test score {score}</h2> */}
             {showResponse ? (
               <div className="feedback">
-                <div class="card">
+                <div class="p-3 mb-2 bg-dark text-white">
                   <img className="image" src="https://i.imgflip.com/6ek11y.png?a469848" alt="Card image cap" />
-                  <h1>You Got:{finalResult.text} </h1>
+                  <h1>You Got: {finalResult.text} </h1>
                   <div class="card-body">
                     <h2>{finalResult.text}</h2>
                   </div>
@@ -134,7 +136,7 @@ function App() {
                 </div>
               </div>
             ) : (
-              <div class="card">
+              <div class="p-3 mb-2 bg-dark text-white">
                 <div className="Questions">
                   <h2>
                     {" "}
@@ -145,9 +147,11 @@ function App() {
                     <ul>
                       {questions[currentQuestion].options.map((option) => {
                         return (
-                          <li onClick={() => optionClicked(option.id)} key={option.id}>
-                            {option.text}
-                          </li>
+                          <div classname="options">
+                            <li onClick={() => optionClicked(option.id)} key={option.id}>
+                              {option.text}
+                            </li>
+                          </div>
                         );
                       })}
                     </ul>
@@ -157,7 +161,7 @@ function App() {
             )}
           </div>
         ) : (
-          <div class="card">
+          <div class="p-3 mb-2 bg-dark text-white">
             <h1 className="start" onClick={() => setQuiz(true)}>
               Start Quiz
             </h1>
