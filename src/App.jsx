@@ -136,35 +136,39 @@ function App() {
                 </div>
               </div>
             ) : (
-              <div class="p-3 mb-2 bg-dark text-white">
-                <div className="Questions">
-                  <h2>
-                    {" "}
-                    {currentQuestion + 1} of {questions.length}{" "}
-                  </h2>
-                  <div>
-                    <h3 className="question-text"> {questions[currentQuestion].text} </h3>
-                    <ul>
-                      {questions[currentQuestion].options.map((option) => {
-                        return (
-                          <div classname="options">
-                            <li onClick={() => optionClicked(option.id)} key={option.id}>
-                              {option.text}
-                            </li>
-                          </div>
-                        );
-                      })}
-                    </ul>
+              <div className="feedback">
+                <div class="p-3 mb-2 bg-dark text-white">
+                  <div className="Questions">
+                    <h2>
+                      {" "}
+                      {currentQuestion + 1} of {questions.length}{" "}
+                    </h2>
+                    <div>
+                      <h3 className="question-text"> {questions[currentQuestion].text} </h3>
+                      <ul>
+                        {questions[currentQuestion].options.map((option) => {
+                          return (
+                            <div classname="options">
+                              <li onClick={() => optionClicked(option.id)} key={option.id}>
+                                {option.text}
+                              </li>
+                            </div>
+                          );
+                        })}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             )}
           </div>
         ) : (
-          <div class="p-3 mb-2 bg-dark text-white">
-            <h1 className="start" onClick={() => setQuiz(true)}>
-              Start Quiz
-            </h1>
+          <div className="feedback">
+            <div class="p-3 mb-2 bg-dark text-white">
+              <h1 className="start" onClick={() => setQuiz(true)}>
+                Start Quiz
+              </h1>
+            </div>
           </div>
         )}
       </div>

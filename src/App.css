@@ -1,6 +1,6 @@
 #root {
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2px;
   text-align: center;
   background-color: #E8E8E8;
 }
@@ -16,9 +16,11 @@
   padding-top: 40px;
 }
 
+
+
 .Questions {
   background-color: #E8E8E8;
-  padding: 1em;
+  padding: 1px;
   width: 80%;
   height: auto;
   margin: 0 auto;
@@ -53,13 +55,13 @@ ul {
   margin-top: 8px;
   list-style-type: none;
   color: black;
-  width: 500px;
+  width: 350px;
 }
 
 li {
-  width: 300px;
+  width: 210px;
     background: #ADADAD;
-    font-size: 20px;
+    font-size: 18px;
     margin: 10px auto;
     padding: 1px;
     cursor: pointer;
@@ -90,3 +92,9 @@ li:hover {
   font-size: 24px;
 }
 
+.image {
+  background-color: #ADADAD;
+  max-width: 300px;
+  margin: 10px auto;
+
+}
