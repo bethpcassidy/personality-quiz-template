@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.Questions {
+  background-color: grey;
+  padding: 1em;
+  border-radius: 16px;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+ul {
+  background-color: darkgray;
+  padding: 16px;
+  font-size: 20px;
+  margin-top: 8px;
+  list-style-type: none;
+}
+
+.question-text{
+  color: darkblue;
+  font-size: 24px;
+}
