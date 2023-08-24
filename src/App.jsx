@@ -60,6 +60,78 @@ function App() {
         { id: 3, text: "The History of Snakes" },
       ],
     },
+    {
+      text: "There's a drink vending machine, what are you getting?",
+      options: [
+        { id: 0, text: "Green Tea" },
+        { id: 1, text: "Soda" },
+        { id: 2, text: "Energy Drink" },
+        { id: 3, text: "Canned Coffee Beverage" },
+      ],
+    },
+    {
+      text: "Which video game do you play?",
+      options: [
+        { id: 0, text: "Cozy town simulator" },
+        { id: 1, text: "Fast paced first person shooter" },
+        { id: 2, text: "Racing game" },
+        { id: 3, text: "Fantasy survival/building game" },
+      ],
+    },
+    {
+      text: "What do you name your cat?",
+      options: [
+        { id: 0, text: "Mittens" },
+        { id: 1, text: "Steve" },
+        { id: 2, text: "Coco" },
+        { id: 3, text: "Trinity" },
+      ],
+    },
+    {
+      text: "What time do you wake up if you have no obligations?",
+      options: [
+        { id: 0, text: "8 am." },
+        { id: 1, text: "10 am." },
+        { id: 2, text: "12 pm." },
+        { id: 3, text: "3 pm." },
+      ],
+    },
+    {
+      text: "How do you remember your plans?",
+      options: [
+        { id: 0, text: "Put it in my calendar" },
+        { id: 1, text: "Alarm." },
+        { id: 2, text: "Write it on my whiteboard." },
+        { id: 3, text: "I'll remember on my own." },
+      ],
+    },
+    {
+      text: "Which color do you like the most",
+      options: [
+        { id: 0, text: "Red" },
+        { id: 1, text: "Yellow" },
+        { id: 2, text: "Blue" },
+        { id: 3, text: "Black" },
+      ],
+    },
+    {
+      text: "Which color do you like the most",
+      options: [
+        { id: 0, text: "Red" },
+        { id: 1, text: "Yellow" },
+        { id: 2, text: "Blue" },
+        { id: 3, text: "Black" },
+      ],
+    },
+    {
+      text: "What season do you like the most.",
+      options: [
+        { id: 0, text: "Summer" },
+        { id: 1, text: "Fall" },
+        { id: 2, text: "Winter" },
+        { id: 3, text: "Spring" },
+      ],
+    },
   ];
 
   const results = [
