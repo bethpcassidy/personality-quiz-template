@@ -190,7 +190,8 @@ function App() {
       <div className="App">
         {/* //header */}
         <div className="top">
-          <h1>Survey</h1>
+          <h1>Pikmin Character Survey</h1>
+          <h2>Which Pikmin are you?</h2>
         </div>
         {startQuiz ? (
           <div className="content">
