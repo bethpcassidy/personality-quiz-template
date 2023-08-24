@@ -1,8 +1,8 @@
 # Pikmin Personality Quiz
 
-### A personality Quiz template themed around the topic: Which pikmin are you?
+A personality Quiz template themed around the topic: Which pikmin are you?
 
-### Built in React.
+Built in React.
 
 # Instructions
 
