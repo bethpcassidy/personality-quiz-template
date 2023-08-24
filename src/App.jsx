@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import { React } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+// import ".src/assets/images";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -137,27 +138,73 @@ function App() {
   const results = [
     {
       id: 0,
-      text: "Vermillion",
-      description: "",
-      image: "",
+      text: "Yellow Pikmin",
+      description:
+        "These Pikmin have lamellae which resemble large ears; these are the means by which they are primarily identifiable.",
+      image: "src/assets/images/400px-P4_Yellow_Pikmin.webp",
     },
     {
       id: 1,
-      text: "Daisy",
-      description: "",
-      image: "",
+      text: "Red Pikmin",
+      description:
+        "The first Pikmin type discovered in all games, and are usually considered the main type of Pikmin due to their relatively simple traits and early discovery. They are cultivated via the Red Onion (or the Master Onion)",
+      image: "src/assets/images/300px-P4_Red_Pikmin.webp",
     },
     {
       id: 2,
-      text: "Lime",
-      description: "",
-      image: "",
+      text: "Ice Pikmin",
+      description:
+        "heir most defining characteristics are their cyan, blocky bodies, seemingly made of ice chunks, their complete immunity to all types of freezing, and their ability to freeze enemies and bodies of water solid.",
+      image: "src/assets/images/300px-Icepikminrender.webp",
     },
     {
       id: 3,
-      text: "Coarse",
-      description: "",
-      image: "",
+      text: "Winged Pikmin",
+      description:
+        "They are pink with large blue eyes, their bodies are striped in darker pink, and they have lavender buds and flowers like Rock Pikmin. Their name comes from the transparent wings on their backs, which allows them to be airborne most of the time.",
+      image: "src/assets/images/Pikmin_4_Winged_Pikmin.webp",
+    },
+    {
+      id: 4,
+      text: "Glow Pikmin",
+      description:
+        "Glow Pikmin have bright green, bioluminescent bodies. They have no legs; their bodies instead end in a tapered and ghost-like tail. Because of this, they have the ability to float.",
+      image: "src/assets/images/400px-Glow_Pikmin.webp",
+    },
+    {
+      id: 5,
+      text: "Rock Pikmin",
+      description:
+        "They resemble small polished rocks with Pikmin eyes and limbs, and have lavender buds and flowers like the Winged Pikmin. The main part of their bodies seem to be a black (gray prior to Pikmin 4) texture of graphite that reflects light, whereas their stems, arms, and legs appear to be smooth and gray.",
+      image: "src/assets/images/400px-P4_Rock_Pikmin.webp",
+    },
+    {
+      id: 6,
+      text: "Rock Pikmin",
+      description:
+        "They resemble small polished rocks with Pikmin eyes and limbs, and have lavender buds and flowers like the Winged Pikmin. The main part of their bodies seem to be a black (gray prior to Pikmin 4) texture of graphite that reflects light, whereas their stems, arms, and legs appear to be smooth and gray.",
+      image: "src/assets/images/400px-P4_Rock_Pikmin.webp",
+    },
+    {
+      id: 7,
+      text: "Blue Pikmin",
+      description:
+        "These Pikmin are distinguishable from other Pikmin species by their pink mouths, a trait seen in no other Pikmin species. These mouths are used to take in water, which filters oxygen through gills, giving them the ability to breathe both underwater and on dry land.",
+      image: "src/assets/images/P4_Blue_Pikmin.webp",
+    },
+    {
+      id: 8,
+      text: "Purple Pikmin",
+      description:
+        "Their most noteworthy characteristics are their massive weight and carrying strength – 10 times those of a regular Pikmin. They are also slower than normal, and have a unique way of attacking enemies",
+      image: "src/assets/images/P4_Purple_Pikmin_Render.webp",
+    },
+    {
+      id: 9,
+      text: "White Pikmin",
+      description:
+        "Their most noteworthy characteristics are their faster speed compared to other Pikmin, ability to find buried objects that are completely hidden underground, and their immunity to poison. Their defining physical characteristics are their red eyes, white color, and smaller size.",
+      image: "src/assets/images/480px-Pikmin_4_White_Flower_Pikmin.webp",
     },
   ];
 
@@ -173,12 +220,24 @@ function App() {
       setResponse(true);
       if (score > 37) {
         // uses setFinalResult to determine the answer with an else if response
-        setFinalResult(results[3]);
-      } else if (score > 30) {
-        setFinalResult(results[2]);
+        setFinalResult(results[9]);
+      } else if (score > 45) {
+        setFinalResult(results[8]);
+      } else if (score > 40) {
+        setFinalResult(results[7]);
+      } else if (score > 36) {
+        setFinalResult(results[6]);
+      } else if (score > 32) {
+        setFinalResult(results[5]);
+      } else if (score > 28) {
+        setFinalResult(results[4]);
       } else if (score > 24) {
+        setFinalResult(results[3]);
+      } else if (score > 20) {
+        setFinalResult(results[2]);
+      } else if (score > 16) {
         setFinalResult(results[1]);
-      } else if (score > 13) {
+      } else if (score >= 0) {
         setFinalResult(results[0]);
       }
     }
@@ -200,19 +259,22 @@ function App() {
             {showResponse ? (
               <div className="feedback">
                 <div class="p-3 mb-2 bg-dark text-white">
-                  <img className="image" src="https://i.imgflip.com/6ek11y.png?a469848" alt="Card image cap" />
+                  <img className="image" src={finalResult.image} alt="Card image cap" height="200px" />
                   <h1>You Got: {finalResult.text} </h1>
                   <div class="card-body">
-                    <h2>{finalResult.text}</h2>
+                    <p>{finalResult.description}</p>
                   </div>
                   <button>Honk</button>
                 </div>
+                <footer>
+                  <p className="source">All information sourced from https://www.pikminwiki.com/</p>
+                </footer>
               </div>
             ) : (
               <div className="feedback">
                 <div class="p-3 mb-2 bg-dark text-white">
                   <div className="Questions">
-                    <h2>
+                    <h2 className="tracker">
                       {" "}
                       {currentQuestion + 1} of {questions.length}{" "}
                     </h2>

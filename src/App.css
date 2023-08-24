@@ -18,10 +18,17 @@
 }
 
 
+.tracker {
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+}
+
 
 .Questions {
   background-color: #E8E8E8;
   padding: 1px;
+  padding-bottom: 30px;
   width: 95%;
   height: 95%;
   margin: 0 auto;
@@ -99,8 +106,12 @@ li:hover {
 }
 
 .image {
-  background-color: #ADADAD;
+  
   max-width: 300px;
   margin: 10px auto;
 
+}
+
+.source {
+  font-size: 12px;
 }
