@@ -264,7 +264,7 @@ function App() {
                   <div class="card-body">
                     <p>{finalResult.description}</p>
                   </div>
-                  <button>Take The Quiz Again</button>
+                  <a href="http://localhost:5174/">Take The Quiz Again</a>
                 </div>
                 <footer>
                   <p className="source">All information sourced from https://www.pikminwiki.com/</p>
