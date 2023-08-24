@@ -39,7 +39,7 @@ function App() {
         { id: 0, text: "Old Tickets" },
         { id: 1, text: "Pen" },
         { id: 2, text: "Laniard" },
-        { id: 3, text: "Benjamin Franklin" },
+        { id: 3, text: "Old Chapstick" },
       ],
     },
     {
@@ -115,12 +115,12 @@ function App() {
       ],
     },
     {
-      text: "Which color do you like the most",
+      text: "What would you want to do most on a free day.",
       options: [
-        { id: 0, text: "Red" },
-        { id: 1, text: "Yellow" },
-        { id: 2, text: "Blue" },
-        { id: 3, text: "Black" },
+        { id: 0, text: "Read a book." },
+        { id: 1, text: "Go hiking with friends." },
+        { id: 2, text: "Watch a really good movie." },
+        { id: 3, text: "Go into the city." },
       ],
     },
     {
@@ -171,14 +171,14 @@ function App() {
       setCurrentQuestion(currentQuestion + 1);
     } else {
       setResponse(true);
-      if (score > 15) {
+      if (score > 37) {
         // uses setFinalResult to determine the answer with an else if response
         setFinalResult(results[3]);
-      } else if (score > 11) {
+      } else if (score > 30) {
         setFinalResult(results[2]);
-      } else if (score > 8) {
+      } else if (score > 24) {
         setFinalResult(results[1]);
-      } else if (score > 3) {
+      } else if (score > 13) {
         setFinalResult(results[0]);
       }
     }

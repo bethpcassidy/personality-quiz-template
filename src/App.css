@@ -21,8 +21,8 @@
 .Questions {
   background-color: #E8E8E8;
   padding: 1px;
-  width: 80%;
-  height: auto;
+  width: 95%;
+  height: 95%;
   margin: 0 auto;
   color: black;
 }
@@ -70,9 +70,14 @@ li {
 .start {
   width: 300px;
     background: #ADADAD;
-    font-size: 20px;
+    font-size: 24px;
     margin: 10px auto;
-    padding: 1px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 50px;
+    color: black;
+    
+    padding: 11px;
     cursor: pointer;
 }
 .start:hover {background: white;
