@@ -124,7 +124,7 @@ function App() {
       ],
     },
     {
-      text: "What season do you like the most.",
+      text: "Which season do you like the most.",
       options: [
         { id: 0, text: "Summer" },
         { id: 1, text: "Fall" },
@@ -190,7 +190,7 @@ function App() {
       <div className="App">
         {/* //header */}
         <div className="top">
-          <h1>Pikmin Character Survey</h1>
+          <h1>Pikmin Character Quiz</h1>
           <h2>Which Pikmin are you?</h2>
         </div>
         {startQuiz ? (
